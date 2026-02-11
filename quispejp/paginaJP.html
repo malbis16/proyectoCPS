@@ -13,7 +13,7 @@
 
     <div class="container">
         <h2>Registro Personal</h2>
-        <p class="subtitle">Completa tu información de perfil</p>
+        <p class="subtitle">Los datos se guardan temporalmente en memoria</p>
 
         <form id="personalForm">
             <div class="form-group">
@@ -42,7 +42,12 @@
                 <textarea id="bio" name="bio" placeholder="Escribe una breve descripción..."></textarea>
             </div>
 
-            <button type="submit" id="submitBtn">Guardar Información</button>
+            <button type="submit" id="submitBtn">Guardar Registro</button>
+
+            <div class="actions">
+                <span id="contador">Registros guardados: 0</span>
+                <button type="button" id="exportBtn" class="btn-secondary">Exportar Todo (.csv)</button>
+            </div>
         </form>
     </div>
 
