@@ -2,63 +2,86 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Calidad y Pruebas de Software - Proyecto CPS</title>
+    <title>Calidad y Pruebas de Software | CPS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css16/style16.css">
 </head>
-
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Calidad</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>Calidad y Pruebas de Software</h1>
             <p>
-                Garantizamos software confiable, seguro y eficiente mediante
-                procesos de aseguramiento de calidad y testing profesional.
+                Garantizamos la confiabilidad, seguridad y rendimiento
+                de tus sistemas mediante estrategias avanzadas de testing.
             </p>
-            <a href="#servicios" class="btn">Conocer Más</a>
+            <button class="btn-primary">Solicitar Consultoría</button>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos un equipo especializado en aseguramiento de calidad (QA),
+                enfocados en mejorar la estabilidad, rendimiento y experiencia
+                de usuario en sistemas empresariales.
+            </p>
         </div>
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="seccion">
-        <h2>Nuestros Servicios</h2>
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Pruebas Funcionales</h3>
-                <p>Verificamos que cada funcionalidad cumpla con los requisitos definidos.</p>
-            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Testing Funcional</h3>
+                    <p>Validación completa de requisitos y procesos del sistema.</p>
+                </div>
 
-            <div class="card">
-                <h3>Pruebas de Rendimiento</h3>
-                <p>Evaluamos la estabilidad y velocidad del sistema bajo carga.</p>
-            </div>
+                <div class="card">
+                    <h3>Pruebas de Rendimiento</h3>
+                    <p>Evaluación de carga, estrés y estabilidad.</p>
+                </div>
 
-            <div class="card">
-                <h3>Automatización</h3>
-                <p>Implementamos testing automatizado para mejorar eficiencia y cobertura.</p>
+                <div class="card">
+                    <h3>Automatización QA</h3>
+                    <p>Implementación de pruebas automatizadas eficientes.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- BENEFICIOS -->
-    <section class="seccion fondo-suave">
-        <h2>¿Por qué es importante la Calidad?</h2>
-        <ul class="beneficios">
-            <li>✔ Reduce errores en producción</li>
-            <li>✔ Mejora la experiencia del usuario</li>
-            <li>✔ Aumenta la confianza del cliente</li>
-            <li>✔ Optimiza tiempos y costos</li>
-        </ul>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Quieres mejorar la calidad de tu software?</p>
+            <button class="btn-secondary">Contáctanos</button>
+        </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta">
-        <h2>Eleva la calidad de tu software hoy</h2>
-        <a href="contacto.html" class="btn">Contáctanos</a>
-    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 CPS - Calidad y Pruebas de Software</p>
+    </footer>
 
 </body>
 </html>
