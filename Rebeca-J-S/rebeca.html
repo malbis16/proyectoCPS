@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git - Sistema de Control de Versiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Git</h1>
+            <p class="subtitle">Sistema de Control de Versiones Distribuido</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#concepto" class="nav-link">Concepto</a></li>
+                <li><a href="#importancia" class="nav-link">Importancia</a></li>
+                <li><a href="#comandos" class="nav-link">Comandos</a></li>
+                <li><a href="#flujo" class="nav-link">Flujo de Trabajo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="concepto" class="section">
+            <h2>¿Qué es Git?</h2>
+            <p>Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para manejar proyectos de cualquier tamaño con velocidad y eficiencia.</p>
+            <p>Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux, y desde entonces se ha convertido en el estándar de la industria para el control de versiones.</p>
+            <div class="info-box">
+                <h3>Características principales:</h3>
+                <ul>
+                    <li>Distribuido: cada desarrollador tiene una copia completa del historial</li>
+                    <li>Rápido y eficiente en el manejo de proyectos grandes</li>
+                    <li>Permite trabajo offline</li>
+                    <li>Branching y merging potentes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="importancia" class="section">
+            <h2>¿Por qué es importante Git?</h2>
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <h3>🔄 Historial Completo</h3>
+                    <p>Mantiene un registro detallado de todos los cambios realizados en el código.</p>
+                </div>
+                <div class="importance-card">
+                    <h3>👥 Colaboración</h3>
+                    <p>Permite que múltiples desarrolladores trabajen simultáneamente en el mismo proyecto.</p>
+                </div>
+                <div class="importance-card">
+                    <h3>🔙 Reversión de Cambios</h3>
+                    <p>Facilita volver a versiones anteriores si algo sale mal.</p>
+                </div>
+                <div class="importance-card">
+                    <h3>🌿 Branching</h3>
+                    <p>Permite desarrollar features de manera aislada sin afectar el código principal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comandos" class="section">
+            <h2>Comandos Importantes</h2>
+            <p>A continuación, los comandos más utilizados en Git:</p>
+            
+            <div class="command-category">
+                <h3>Configuración Inicial</h3>
+                <div class="command-item">
+                    <code>git config --global user.name "Tu Nombre"</code>
+                    <p>Configura tu nombre de usuario</p>
+                </div>
+                <div class="command-item">
+                    <code>git config --global user.email "tu@email.com"</code>
+                    <p>Configura tu email</p>
+                </div>
+            </div>
+
+            <div class="command-category">
+                <h3>Comandos Básicos</h3>
+                <div class="command-item">
+                    <code>git init</code>
+                    <p>Inicializa un nuevo repositorio Git</p>
+                </div>
+                <div class="command-item">
+                    <code>git clone [url]</code>
+                    <p>Clona un repositorio remoto</p>
+                </div>
+                <div class="command-item">
+                    <code>git status</code>
+                    <p>Muestra el estado de los archivos</p>
+                </div>
+                <div class="command-item">
+                    <code>git add [archivo]</code>
+                    <p>Añade archivos al área de staging</p>
+                </div>
+                <div class="command-item">
+                    <code>git commit -m "mensaje"</code>
+                    <p>Guarda los cambios con un mensaje descriptivo</p>
+                </div>
+            </div>
+
+            <div class="command-category">
+                <h3>Trabajo con Ramas</h3>
+                <div class="command-item">
+                    <code>git branch</code>
+                    <p>Lista todas las ramas locales</p>
+                </div>
+                <div class="command-item">
+                    <code>git branch [nombre]</code>
+                    <p>Crea una nueva rama</p>
+                </div>
+                <div class="command-item">
+                    <code>git checkout [rama]</code>
+                    <p>Cambia a otra rama</p>
+                </div>
+                <div class="command-item">
+                    <code>git merge [rama]</code>
+                    <p>Fusiona una rama con la actual</p>
+                </div>
+            </div>
+
+            <div class="command-category">
+                <h3>Sincronización</h3>
+                <div class="command-item">
+                    <code>git pull</code>
+                    <p>Descarga cambios del repositorio remoto</p>
+                </div>
+                <div class="command-item">
+                    <code>git push</code>
+                    <p>Sube tus cambios al repositorio remoto</p>
+                </div>
+                <div class="command-item">
+                    <code>git fetch</code>
+                    <p>Descarga cambios sin fusionarlos</p>
+                </div>
+            </div>
+
+            <button id="showMoreCommands" class="btn">Ver más comandos</button>
+            
+            <div id="moreCommands" class="hidden">
+                <div class="command-category">
+                    <h3>Comandos Avanzados</h3>
+                    <div class="command-item">
+                        <code>git log</code>
+                        <p>Muestra el historial de commits</p>
+                    </div>
+                    <div class="command-item">
+                        <code>git diff</code>
+                        <p>Muestra las diferencias entre cambios</p>
+                    </div>
+                    <div class="command-item">
+                        <code>git reset [archivo]</code>
+                        <p>Quita archivos del área de staging</p>
+                    </div>
+                    <div class="command-item">
+                        <code>git stash</code>
+                        <p>Guarda temporalmente cambios sin commit</p>
+                    </div>
+                    <div class="command-item">
+                        <code>git rebase [rama]</code>
+                        <p>Reaplica commits sobre otra base</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="flujo" class="section">
+            <h2>Flujo de Trabajo Típico</h2>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <span class="step-number">1</span>
+                    <h3>Clonar o Inicializar</h3>
+                    <p>git clone [url] o git init</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">2</span>
+                    <h3>Crear Rama</h3>
+                    <p>git checkout -b feature/nueva-funcionalidad</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">3</span>
+                    <h3>Realizar Cambios</h3>
+                    <p>Modificar archivos del proyecto</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">4</span>
+                    <h3>Staging</h3>
+                    <p>git add .</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">5</span>
+                    <h3>Commit</h3>
+                    <p>git commit -m "Descripción de cambios"</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">6</span>
+                    <h3>Push</h3>
+                    <p>git push origin feature/nueva-funcionalidad</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Introducción a Git. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
