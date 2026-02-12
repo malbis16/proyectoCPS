@@ -123,6 +123,7 @@ button {
     border: 1px solid var(--success);
     color: var(--success);
     margin-top: 5px;
+    font-size: medium;
 }
 
 .btn-secondary:hover {
