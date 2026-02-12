@@ -163,12 +163,4 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.opacity = 1 - (scrolled / 500);
         }
     });
-    
-    // Contador de comandos mostrados
-    const commandItems = document.querySelectorAll('.command-item');
-    console.log(`Total de comandos Git disponibles: ${commandItems.length}`);
-    
-    // Mensaje de bienvenida en consola
-    console.log('%c¡Bienvenido a la guía de Git! 🚀', 'color: #f05032; font-size: 20px; font-weight: bold;');
-    console.log('%cExplora los comandos y haz clic en ellos para copiarlos.', 'color: #2c3e50; font-size: 14px;');
-});
+    });
