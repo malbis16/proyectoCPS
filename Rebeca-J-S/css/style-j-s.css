@@ -257,55 +257,6 @@ main {
     display: none;
 }
 
-/* Workflow */
-.workflow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.workflow-step {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: var(--white);
-    padding: 25px;
-    border-radius: var(--border-radius);
-    text-align: center;
-    position: relative;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.workflow-step:hover {
-    transform: translateY(-5px);
-}
-
-.step-number {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.workflow-step h3 {
-    color: var(--white);
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.workflow-step p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 0;
-}
-
 /* Footer */
 footer {
     background-color: var(--secondary-color);
